@@ -33,6 +33,6 @@ while (a < 100) {
 }
 
 
-//  <------- Affichage du message sur la page html (par le biais de "document.write") en fonction des différentes valeurs affectées aux variables "compteurs" ---------->
+// Affichage du message sur la page html (par le biais de "document.write") en fonction des différentes valeurs affectées aux variables "compteurs".
 
 document.write("Selon les données saisies, il y a " + compteur1 + " personne(s) agée(s) de moins de 20 ans, " + compteur2 + " agée(s) de 20 à 40 ans, " + compteur3 + " agée(s) de plus de 40 ans.");
