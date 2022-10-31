@@ -9,7 +9,7 @@ let tableau = [];
 
 //  définition des instructions (en utilisant les différentes variables)
 
-// <------ Faire deux choses: solliciter une valeur à l'utilisateur, avec la variable a et mettre la valeur saisie dans le tableau (le pousser ou "push" dedans) avec la variable tableau -------->
+// <------ Faire deux choses("do"): solliciter une valeur à l'utilisateur, avec la variable a et mettre la valeur saisie dans le tableau (le pousser ou "push" dedans) avec la variable tableau -------->
 do {
     a = prompt("Saisissez l'âge des différentes personnes :");  
     tableau.push(a);
