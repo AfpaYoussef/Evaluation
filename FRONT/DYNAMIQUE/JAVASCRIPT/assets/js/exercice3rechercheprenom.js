@@ -10,7 +10,7 @@ if(tableau.includes(a)){
 	tableau.splice(tableau.indexOf(a),1);
 	tableau.push(" ");
     console.log(tableau)
-//.... affichage d'un message incluant la variable tableau modifié c'est à dire 
+//.... affichage d'un message incluant la variable tableau modifié c'est à dire sans le prénom supprimé
     alert("Le prénom saisi a été supprimé: " + (tableau))
 	
 }
