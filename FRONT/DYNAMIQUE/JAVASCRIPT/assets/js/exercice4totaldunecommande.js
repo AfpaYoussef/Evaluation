@@ -25,14 +25,14 @@ if(TOT>500){
     PAP = ((TOT - (TOT*REM2)))
     if (PAP >= 500) 
     {
-    alert("Le montant de votre commande est de "+ PAP + " euros incluant une remise de "+ (TOT*REM2) + " euros sans frais de port.");
+    alert("Le montant de votre commande est de "+ PAP.toFixed(2) + " euros incluant une remise de "+ (TOT*REM2).toFixed(2) + " euros sans frais de port.");
     }
 
     if (PAP < 500)
     {
         P1=PAP*PORT;
         Facture1 = PAP + P1;
-        alert("Le montant de votre commande est de "+ Facture1 +" euros incluant une remise de "+ (TOT*REM2) + " et des frais de port de "+ P1 +" euros.");
+        alert("Le montant de votre commande est de "+ Facture1.toFixed(2) +" euros incluant une remise de "+ (TOT*REM2).toFixed(2) + " et des frais de port de "+ P1.toFixed(2) +" euros.");
     }
 }
 
@@ -41,12 +41,12 @@ if (TOT > 100 && TOT <= 200) {
 
     if ((PAP*PORT) < PORT1) {
         Facture1 = PAP + PORT1;
-        alert("Le montant de votre commande est de "+ Facture1 +" euros incluant une remise de "+ (TOT*REM1) +" et des frais de port de "+ PORT1 + " euros.");
+        alert("Le montant de votre commande est de "+ Facture1.toFixed(2) +" euros incluant une remise de "+ (TOT*REM1).toFixed(2) +" et des frais de port de "+ PORT1.toFixed(2) + " euros.");
     }
 
     else if  ((PAP*PORT) > PORT1) {
         Facture1 = PAP + (PAP*PORT);
-        alert("Le montant de votre commande est de "+ Facture1 +" euros incluant une remise de "+ (TOT*REM1) +" et des frais de port de "+ (PAP*PORT) + " euros.");
+        alert("Le montant de votre commande est de "+ Facture1.toFixed(2) +" euros incluant une remise de "+ (TOT*REM1).toFixed(2) +" et des frais de port de "+ (PAP*PORT).toFixed(2) + " euros.");
     }
 }
 
@@ -54,11 +54,11 @@ if (TOT <= 100) {
     TOT;
     if ((TOT*PORT) < PORT1) {
     Facture1 = TOT + PORT1;
-    alert("Le montant de votre commande est de "+ Facture1 +" euros et ne bénéficie d'aucune remise. Les frais de port sont de "+ PORT1 + " euros.");
+    alert("Le montant de votre commande est de "+ Facture1.toFixed(2) +" euros et ne bénéficie d'aucune remise. Les frais de port sont de "+ PORT1.toFixed(2) + " euros.");
     }
 
     else if ((TOT*PORT) > PORT1) {
     Facture1 = TOT + (TOT*PORT); 
-    alert("Le montant de votre commande est de "+ Facture1 +" euros. Elle ne bénéficie d'aucune remise. Les frais de port sont de "+ PORT + " euros.");
+    alert("Le montant de votre commande est de "+ Facture1.toFixed(2) +" euros. Elle ne bénéficie d'aucune remise. Les frais de port sont de "+ PORT.toFixed(2) + " euros.");
     }
 }
